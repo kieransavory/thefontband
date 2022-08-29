@@ -1,0 +1,159 @@
+/*****************************************************************************************WORKSPACE SETUP*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*******************************************************************************************NAVBAR DESKTOP STYLING */
+
+
+.desktopnavbar ul{
+    position: fixed;
+    top: 0px;
+    color: whitesmoke;
+    float: right;
+    width: 100vw;
+    border-bottom: 2px solid white;
+}
+
+.desktopnavbar ul li{
+    float: right;
+    display: inline;
+}
+
+.desktopnavbar ul li a{
+    transition: all 0.25s;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1vw;
+}
+
+
+.desktopnavbar ul li a:hover{
+    transition: all 0.25s;
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+
+
+/*************************************************************************************************FOOTER DESKTOP STYLING */
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 5vh;
+    border-top: 2px solid white;
+}
+
+.mobilelinkpage{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+
+    .desktopnavbar{
+        display: none;
+    }
+
+    .mobilenavbar{
+        height: 40px;
+        border-bottom: 2px solid white;
+        width: 100%;
+        display: flex;
+    }
+
+    .menutoggle{
+        background-color: transparent;
+        visibility: visible;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 10vw;
+        padding: .5vw;
+    }
+
+    .menutoggle.active{
+        visibility: hidden;
+    }
+
+    .bar{
+        width: 100%;
+        background-color: whitesmoke;
+        height: 5px;
+        border-radius: 10px;
+        margin: .5vw;
+    }
+
+    .mobilelinkpage{
+        transition: all 0.75s;
+        visibility: hidden;
+        position: fixed;
+        top: 500vw;
+    }
+
+
+    .mobilelinkpage.active{
+        transition: all 0.5s;
+        position: absolute;
+        background-color: whitesmoke;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;   
+        visibility: visible;
+    }
+
+    .mobilelinkpage ul{ 
+        width: 100vw;
+        height: 100vh;
+        background-color: whitesmoke;
+    }
+
+    .mobilelinkpage ul li a{
+        background-color: whitesmoke;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        font-size: 17.5vw;
+    }
+
+    .mobilelinkpage button{
+        border: none;
+        background-color: transparent;
+        color: black;
+        font-size: 10vw;
+        padding: 5px;
+        font-weight: 900;
+        position: absolute;
+        top: 0px;
+        right: 5px;
+    }
+    
+    
+}
+
